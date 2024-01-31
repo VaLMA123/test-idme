@@ -1,0 +1,342 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    outline: 0;
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    color: #000000;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+.page-container {
+    min-height: 100%;
+    position: relative;
+    background: #f3f5f8;
+}
+
+.container {
+    margin-top: 135px;
+    clear: both;
+    background: #f3f5f8;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+}
+
+.content-container {
+    clear: both;
+    margin: 0 auto;
+    max-width: 475px;
+    -webkit-transform: translateY(-110px);
+    -ms-transform: translateY(-110px);
+    transform: translateY(-110px);
+}
+
+@media screen and (min-width: 480px) {
+    .content-container {
+        width: 475px;
+    }
+}
+
+.shared_structure {
+    background: #fff;
+    -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .shared_structure {
+        border-radius: 12px;
+        padding: 40px;
+    }
+}
+
+.shared_structure h1 {
+    color: #003e73;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.33;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .shared_structure h1 {
+        font-size: 16px;
+    }
+}
+
+.shared_structure h2 {
+    color: #2d3e51;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    margin: 8px 0 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .shared_structure h2 {
+        font-size: 18px;
+    }
+}
+
+.shared_structure h3, .shared_structure h4 {
+    color: #003e73;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.shared_structure p {
+    color: #2d3e51;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.shared_structure p.m_narrow {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.shared_structure p.m_bold {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #003e73;
+    line-height: 1.4em;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin: 30px 0 0 0;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 8px 0 30px 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+h2 span {
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin: 20px 0 10px 0;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 0;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #003e73;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+    -webkit-transition: .25s all ease-in-out;
+    transition: .25s all ease-in-out;
+    outline: 0;
+}
+
+a:hover {
+    color: #004f93;
+    text-decoration: none;
+    -webkit-transition: .25s all ease-in-out;
+    transition: .25s all ease-in-out;
+}
+
+a:focus, a:active {
+    color: #4a4a4a;
+    outline: 0;
+    text-decoration: none;
+}
+
+.form-header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-header p {
+    font-size: 1.5em;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .form-header p {
+        margin-top: 5px;
+    }
+}
+
+.form-header .logo {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.form-header-content {
+    margin-bottom: 30px;
+}
+
+.form-header-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-container .form-content {
+    margin-bottom: 25px;
+}
+
+.form-container .form-content p {
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    .form-container .form-content p {
+        padding: 0;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer {
+    padding: 30px 0;
+    -webkit-transform: translateY(-110px);
+    -ms-transform: translateY(-110px);
+    transform: translateY(-110px);
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 15px 0;
+    }
+}
+
+.footer-links {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-links a {
+    color: #2d3e51;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0 8px;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #0071bc;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
